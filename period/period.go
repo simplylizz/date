@@ -283,7 +283,7 @@ func absInt32(v int32) int32 {
 // Years gets the whole number of years in the period.
 // The result is the number of years and does not include any other field.
 func (period Period) Years() int {
-	return int(period.YearsFloat())
+	return int(period.years / 10)
 }
 
 // YearsFloat gets the number of years in the period, including a fraction if any is present.
@@ -298,7 +298,7 @@ func (period Period) YearsFloat() float32 {
 // Note that after normalisation, whole multiple of 12 months are added to
 // the number of years, so the number of months will be reduced correspondingly.
 func (period Period) Months() int {
-	return int(period.MonthsFloat())
+	return int(period.months / 10)
 }
 
 // MonthsFloat gets the number of months in the period.
@@ -313,7 +313,7 @@ func (period Period) MonthsFloat() float32 {
 // Days gets the whole number of days in the period. This includes the implied
 // number of weeks but does not include any other field.
 func (period Period) Days() int {
-	return int(period.DaysFloat())
+	return int(period.days / 10)
 }
 
 // DaysFloat gets the number of days in the period. This includes the implied
@@ -352,7 +352,7 @@ func (period Period) ModuloDays() int {
 // Hours gets the whole number of hours in the period.
 // The result is the number of hours and does not include any other field.
 func (period Period) Hours() int {
-	return int(period.HoursFloat())
+	return int(period.hours / 10)
 }
 
 // HoursFloat gets the number of hours in the period.
@@ -367,7 +367,7 @@ func (period Period) HoursFloat() float32 {
 // Note that after normalisation, whole multiple of 60 minutes are added to
 // the number of hours, so the number of minutes will be reduced correspondingly.
 func (period Period) Minutes() int {
-	return int(period.MinutesFloat())
+	return int(period.minutes / 10)
 }
 
 // MinutesFloat gets the number of minutes in the period.
@@ -385,7 +385,7 @@ func (period Period) MinutesFloat() float32 {
 // Note that after normalisation, whole multiple of 60 seconds are added to
 // the number of minutes, so the number of seconds will be reduced correspondingly.
 func (period Period) Seconds() int {
-	return int(period.SecondsFloat())
+	return int(period.seconds / 10)
 }
 
 // SecondsFloat gets the number of seconds in the period.
