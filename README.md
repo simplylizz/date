@@ -25,11 +25,11 @@ full documentation and examples.
 
 ## Installation
 
-    go get -u github.com/simplylizz/date32
+    go get -u github.com/simplylizz/date
 
 or
 
-    dep ensure -add github.com/simplylizz/date32
+    dep ensure -add github.com/simplylizz/date
 
 ## Status
 

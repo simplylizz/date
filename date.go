@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-package date32
+package date
 
 import (
 	"math"
 	"time"
 
-	"github.com/simplylizz/date32/gregorian"
-	"github.com/simplylizz/date32/period"
+	"github.com/simplylizz/date/gregorian"
+	"github.com/simplylizz/date/period"
 )
 
 // PeriodOfDays describes a period of time measured in whole days. Negative values

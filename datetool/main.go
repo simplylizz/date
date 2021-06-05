@@ -12,8 +12,8 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/simplylizz/date32"
-	"github.com/simplylizz/date32/clock"
+	"github.com/simplylizz/date"
+	"github.com/simplylizz/date/clock"
 	"golang.org/x/text/language"
 	"golang.org/x/text/message"
 )

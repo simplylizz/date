@@ -7,7 +7,7 @@
 package view
 
 import (
-	"github.com/simplylizz/date32"
+	"github.com/simplylizz/date"
 )
 
 const (

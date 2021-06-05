@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-package date32
+package date
 
 import (
 	"runtime/debug"
 	"testing"
 	"time"
 
-	"github.com/simplylizz/date32/period"
+	"github.com/simplylizz/date/period"
 )
 
 func same(d Date, t time.Time) bool {

@@ -1,4 +1,4 @@
-module github.com/simplylizz/date32
+module github.com/simplylizz/date
 
 require (
 	github.com/onsi/gomega v1.10.5
@@ -9,4 +9,4 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
 
-go 1.15
+go 1.16

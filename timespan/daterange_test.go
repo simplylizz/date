@@ -10,8 +10,8 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/simplylizz/date32"
-	"github.com/simplylizz/date32/period"
+	. "github.com/simplylizz/date"
+	"github.com/simplylizz/date/period"
 )
 
 var d0320 = New(2015, time.March, 20)

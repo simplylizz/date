@@ -46,4 +46,4 @@
 //
 // https://tools.ietf.org/html/rfc3339
 //
-package date32
+package date

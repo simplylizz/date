@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/simplylizz/date32"
-	"github.com/simplylizz/date32/period"
+	"github.com/simplylizz/date"
+	"github.com/simplylizz/date/period"
 )
 
 // TimestampFormat is a simple format for date & time, "2006-01-02 15:04:05".
