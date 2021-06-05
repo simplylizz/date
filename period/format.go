@@ -126,7 +126,7 @@ func (p64 period64) String() string {
 func writeField64(w io.Writer, field int64, designator byte) {
 	if field != 0 {
 		if field%10 != 0 {
-			fmt.Fprintf(w, "%g", float32(field)/10)
+			fmt.Fprintf(w, "%0.1f", float64(field)/10)
 		} else {
 			fmt.Fprintf(w, "%d", field/10)
 		}

@@ -152,12 +152,12 @@ func TestParsePeriodWithoutNormalise(t *testing.T) {
 		{"P0.1W", "P0.7D", Period{days: 7}},
 		{"-P0.1W", "-P0.7D", Period{days: -7}},
 		// largest
-		{"PT3276.7S", "PT3276.7S", Period{seconds: 32767}},
-		{"PT3276.7M", "PT3276.7M", Period{minutes: 32767}},
-		{"PT3276.7H", "PT3276.7H", Period{hours: 32767}},
-		{"P3276.7D", "P3276.7D", Period{days: 32767}},
-		{"P3276.7M", "P3276.7M", Period{months: 32767}},
-		{"P3276.7Y", "P3276.7Y", Period{years: 32767}},
+		{"PT107374182.4S", "PT107374182.4S", Period{seconds: 1073741824}},
+		{"PT107374182.4M", "PT107374182.4M", Period{minutes: 1073741824}},
+		{"PT107374182.4H", "PT107374182.4H", Period{hours: 1073741824}},
+		{"P107374182.4D", "P107374182.4D", Period{days: 1073741824}},
+		{"P107374182.4M", "P107374182.4M", Period{months: 1073741824}},
+		{"P107374182.4Y", "P107374182.4Y", Period{years: 1073741824}},
 
 		{"P3Y", "P3Y", Period{years: 30}},
 		{"P6M", "P6M", Period{months: 60}},
