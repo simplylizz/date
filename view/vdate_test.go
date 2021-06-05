@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/rickb777/date"
+	"github.com/simplylizz/date32"
 )
 
 func TestBasicFormatting(t *testing.T) {

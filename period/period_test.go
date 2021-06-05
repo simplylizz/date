@@ -43,14 +43,14 @@ func TestParseErrors(t *testing.T) {
 		{"P0.1YT0.1S", false, ": 'Y' & 'S' only the last field can have a fraction", "P0.1YT0.1S"},
 		{"P", false, ": expected 'Y', 'M', 'W', 'D', 'H', 'M', or 'S' designator", "P"},
 		// integer overflow
-		{"P32768Y", false, ": integer overflow occurred in years", "P32768Y"},
-		{"P32768M", false, ": integer overflow occurred in months", "P32768M"},
-		{"P32768W", false, ": integer overflow occurred in days", "P32768W"},
-		{"P32768D", false, ": integer overflow occurred in days", "P32768D"},
-		{"PT32768H", false, ": integer overflow occurred in hours", "PT32768H"},
-		{"PT32768M", false, ": integer overflow occurred in minutes", "PT32768M"},
-		{"PT32768S", false, ": integer overflow occurred in seconds", "PT32768S"},
-		{"PT32768H32768M32768S", false, ": integer overflow occurred in hours,minutes,seconds", "PT32768H32768M32768S"},
+		{"P2147483648Y", false, ": integer overflow occurred in years", "P2147483648Y"},
+		{"P2147483648M", false, ": integer overflow occurred in months", "P2147483648M"},
+		{"P2147483648W", false, ": integer overflow occurred in days", "P2147483648W"},
+		{"P2147483648D", false, ": integer overflow occurred in days", "P2147483648D"},
+		{"PT2147483648H", false, ": integer overflow occurred in hours", "PT2147483648H"},
+		{"PT2147483648M", false, ": integer overflow occurred in minutes", "PT2147483648M"},
+		{"PT2147483648S", false, ": integer overflow occurred in seconds", "PT2147483648S"},
+		{"PT2147483648H2147483648M2147483648S", false, ": integer overflow occurred in hours,minutes,seconds", "PT2147483648H2147483648M2147483648S"},
 		{"PT103412160000S", false, ": integer overflow occurred in seconds", "PT103412160000S"},
 	}
 	for i, c := range cases {

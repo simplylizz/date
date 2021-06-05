@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/rickb777/date"
+	"github.com/simplylizz/date32"
 )
 
 const zero time.Duration = 0

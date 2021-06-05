@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/rickb777/date/period"
+	"github.com/simplylizz/date32/period"
 )
 
 func same(d Date, t time.Time) bool {

@@ -1,4 +1,4 @@
-module github.com/rickb777/date
+module github.com/simplylizz/date32
 
 require (
 	github.com/onsi/gomega v1.10.5
